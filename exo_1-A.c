@@ -39,6 +39,9 @@ int main() {
         if (choixJoueur == 1) {
             printf("Tu attaques le %s !\n", monstreRencontre);
             int nombreAleatoire = rand() % 100 + 1;
+            printf("Tu as reçus %d de dégâts\n", nombreAleatoire);
+            pointsDeVie = pointsDeVie - nombreAleatoire;
+            printf("Il te reste %d de points de vie\n", pointsDeVie);
             
         }
         // Condition pour explorer
