@@ -1,6 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
+    
+    srand(time(NULL));
     // Déclaration des variables
     int choixJoueur;
     int pointsDeVie = 100;
@@ -34,14 +38,12 @@ int main() {
         // Condition pour attaquer
         if (choixJoueur == 1) {
             printf("Tu attaques le %s !\n", monstreRencontre);
-            // Code pour gérer le combat entre le joueur et le monstre
-            // ...
+            int nombreAleatoire = rand() % 100 + 1;
+            
         }
         // Condition pour explorer
         else if (choixJoueur == 2) {
             printf("Tu explores les environs...\n");
-            // Code pour gérer l'exploration
-            // ...
 
             // Afficher les objets trouvés
             printf("Tu as trouvé les objets suivants :\n");
