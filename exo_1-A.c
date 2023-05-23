@@ -4,8 +4,8 @@
 
 int main() {
     
-    srand(time(NULL));
-    // Déclaration des variables
+    srand(time(NULL))
+
     int choixJoueur;
     int pointsDeVie = 100;
     int attaque = 10;
