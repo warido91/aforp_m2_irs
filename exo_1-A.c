@@ -42,7 +42,13 @@ int main() {
             printf("Tu as reçus %d de dégâts\n", nombreAleatoire);
             pointsDeVie = pointsDeVie - nombreAleatoire;
             printf("Il te reste %d de points de vie\n", pointsDeVie);
-            
+
+            // Mise à jour des points de vie
+             pointsDeVie -= nombreAleatoire;
+             if (pointsDeVie < 0) {
+                pointsDeVie = 0;
+        }
+        printf("Il te reste %d points de vie\n", pointsDeVie);
         }
         // Condition pour explorer
         else if (choixJoueur == 2) {
@@ -63,6 +69,7 @@ int main() {
         else {
             printf("Choix invalide ! Veuillez sélectionner une option valide.\n");
         }
+    printf("Tu as perdu...\n");
     }
 
     return 0;
