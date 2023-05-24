@@ -13,6 +13,8 @@ int main() {
     char nomJoueur[20];
     char monstreRencontre[20] = "Dragon";
     char objetsTrouves[3][20] = {"Épée", "Potion", "Bouclier"};
+    // Liste des lieux à explorer
+    char lieux[5][20] = {"Forêt","Caverne","Plage","Montagne","Ruines"};
     int i;
 
     // Demander le nom du joueur
@@ -52,6 +54,11 @@ int main() {
         // Condition pour explorer
         else if (choixJoueur == 2) {
             printf("Tu explores les environs...\n");
+             // Sélection aléatoire d'un lieu
+            int indexLieu = rand() % 5;
+
+            // Affichage du lieu sélectionné
+            printf("Tu te trouves au lieu : %s\n", lieux[indexLieu]);
 
             // Afficher les objets trouvés
             printf("Tu as trouvé les objets suivants :\n");
