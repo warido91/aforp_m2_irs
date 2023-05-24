@@ -8,6 +8,7 @@ defense = 5
 nomJoueur = ""
 monstreRencontre = "Dragon"
 objetsTrouves = ["Épée", "Potion", "Bouclier"]
+lieux = ["Lac","Forêt","Aforp"]
 
 # Demander le nom du joueur
 print("Bienvenue dans le jeu !")
@@ -43,9 +44,7 @@ while pointsDeVie > 0:
     # Condition pour explorer
     elif choixJoueur == 2:
         print("Tu explores les environs...")
-        # Code pour gérer l'exploration
-        # ...
-
+        print ("Tu te trouves à ce lieu : ")
         # Afficher les objets trouvés
         print("Tu as trouvé les objets suivants :")
         for objet in objetsTrouves:

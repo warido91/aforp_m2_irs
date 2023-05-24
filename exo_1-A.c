@@ -16,6 +16,7 @@ int main() {
     // Liste des lieux à explorer
     char lieux[5][20] = {"Forêt","Caverne","Plage","Montagne","Ruines"};
     int i;
+    int nombreAleatoire = rand() % 100 + 1;
 
     // Demander le nom du joueur
     printf("Bienvenue dans le jeu !\n");
@@ -40,7 +41,6 @@ int main() {
         // Condition pour attaquer
         if (choixJoueur == 1) {
             printf("Tu attaques le %s !\n", monstreRencontre);
-            int nombreAleatoire = rand() % 100 + 1;
             printf("Tu as reçus %d de dégâts\n", nombreAleatoire);
             //pointsDeVie = pointsDeVie - nombreAleatoire;
             // Mise à jour des points de vie
