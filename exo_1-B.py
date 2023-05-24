@@ -43,8 +43,11 @@ while pointsDeVie > 0:
 
     # Condition pour explorer
     elif choixJoueur == 2:
-        print("Tu explores les environs...")
-        print ("Tu te trouves à ce lieu : ")
+        print("Tu explores les environs...")    
+        # Sélection aléatoire d'un lieu
+        index_lieu = random.randint(0, len(lieux) - 1)
+        # Affichage du lieu sélectionné
+        print("Tu explores le lieu :", lieux[index_lieu])
         # Afficher les objets trouvés
         print("Tu as trouvé les objets suivants :")
         for objet in objetsTrouves:
