@@ -9,16 +9,19 @@ Liste des exos :
 
 ## Exo 1
 ### Attributs
-**choixJoueur** =
-**pointsDeVie** =
-**attaque** =
-**defense** =
-**nomJoueur** =
-**monstreRencontre** =
-**objetsTrouves** =
-**lieux** =
-**i** = index
-    nombreAleatoire
-    
+
+```
+choixJoueur =
+pointsDeVie =
+attaque =
+defense =
+nomJoueur =
+monstreRencontre =
+objetsTrouves =
+lieux =
+i = index
+nombreAleatoire =
+```
+
 ## Exo 2
 ### Attributs
