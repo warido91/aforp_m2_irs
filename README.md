@@ -7,4 +7,8 @@ Liste des exos :
 * Exo 2-A : Data Manager in Python
 * Exo 2-B : Data Manager in C
 
-# Exo 1
+## Exo 1
+### Attributs
+
+## Exo 2
+### Attributs
